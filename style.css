@@ -1,0 +1,66 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+form{
+    padding-left: 30px;
+}
+
+#callType .option{
+    position: relative;
+    left: 200px;
+    align-items: center;
+}
+
+#name input{
+    position: relative;
+    left: 80px;
+}
+
+#contact input{
+    position: relative;
+    left: 88px;
+    width: 368px;
+}
+
+#client select{
+    position: relative;
+    left: 158px;
+    width: 375px;
+}
+
+#client .other{
+    position: relative;
+    left: 151px;
+    width: 368px;
+}
+
+#notes input{
+    position: relative;
+    left: 155px;
+}
+
+#date input{
+    position: relative;
+    left: 164px;
+    width: 375px;
+}
+
+button{
+    margin-left: 45%;
+    padding: 10px;
+    background-color: gray;
+    color: white;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: black;
+}
+
+fieldset{
+    position: relative;
+    left: 500px;
+    top: 50px;
+    width: 300px;
+}

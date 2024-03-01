@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <meta charset="UTF-18">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <fieldset>
+            <form>
+                <h1>Call Detail Record</h1>
+                <pre>Please fill the form below clearly indicating your interested call type and best time for calling
+                </pre>
+                <hr>
+                <div id="callType">
+                    <label style="font-weight: bolder;">Call Type</label><br>
+                    <input type="radio" id="i" class="option" name="call" value="inbound"><label for="i" class="option">Inbound</label><br>
+                    <input type="radio" id="o" class="option" name="call" value="outbound"><label for="o" class="option">Outbound</label><br>
+                    <input type="radio" id="c" class="option" name="call" value="conference"><label for="c" class="option">Conference</label>
+                </div><br>
+                <div id="name">
+                    <label style="font-weight: bolder;">Name of Person</label>
+                    <input type="text" name='fname' id="fname" placeholder="First Name" name="first_name" required>
+                    <input type="text" name="lname" id="lname" placeholder="Last Name" name="last_name" required>
+                </div><br>
+                <div id="contact">
+                    <label style="font-weight: bolder;">Phone Number</label>
+                    <input type="tel" id="inputContact" pattern="[0-9]{10}" name="number">
+                </div><br>
+                <div id="client">
+                    <label style="font-weight: bolder;">Client</label>
+                    <select>
+                        <option>Please Select</option>
+                        <option value="amazon">Amazon</option>
+                        <option value="google">Google</option>
+                        <option value="ibm">IBM</option>
+                    </select><br><br>
+                    <label style="font-weight: bolder;">Others</label>
+                    <input type="text" class="other" name="others">
+                </div><br>
+                <div id="notes">
+                    <label style="font-weight: bolder;">Notes</label>
+                    <input type="textarea" style="width: 370px; height:150px;" placeholder="Type here..." name="notes">
+                </div><br>
+                <div id="date">
+                    <label style="font-weight: bolder;">Date </label>
+                    <input type="date" name="date   ">
+                </div>
+                <br>
+                <hr>
+                <button type="submit" id="submit">Submit Form</button>
+            </form>
+        </fieldset>
+        <script src="script.js"></script>
+    </body>
+</html>
